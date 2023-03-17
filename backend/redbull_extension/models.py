@@ -27,7 +27,7 @@ COLLEGES = (
     ("9", "The Ohio State University"),
 )
 
-REDBULL_OCCASSIONS = (
+REDBULL_OCCASIONS = (
     ("0", "Fitness"),
     ("1", "Party & Socializing"),
     ("2", "Work"),
@@ -41,7 +41,7 @@ class Club (models.Model):
     description = models.TextField()
     category = models.CharField(max_length=1, choices=CLUB_CATEGORIES)
     college = models.CharField(max_length=1, choices=COLLEGES)
-    redbull_occassion = models.CharField(max_length=1, choices=REDBULL_OCCASSIONS)
+    redbull_occasion = models.CharField(max_length=1, choices=REDBULL_OCCASIONS)
     contacts = models.ManyToManyField ('Person')
     student_marketers =  models.ManyToManyField (User)
 
