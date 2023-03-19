@@ -12,7 +12,7 @@ class PersonSerializer (serializers.ModelSerializer):
             'number',
             'clubs',
             'student_marketers',
-            )
+        )
         
 class ClubSerializer (serializers.ModelSerializer):
     class Meta:
